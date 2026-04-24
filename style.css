@@ -5,13 +5,13 @@ body {
 }
 
 h1{
-    color: rgb(82, 18, 230);
+    color: rgba(44, 3, 139, 0.548);
 }
 
 button{
     padding: 10px;
     font-size: 18px;
-    background-color: hsl(204, 94%, 53%);
+    background-color: hsl(236, 71%, 33%);
     color: #ffffff;
     border: none;
     border-radius: 5px;
