@@ -22,7 +22,20 @@ button.addEventListener("click", function () {
     if(resultText.includes("大吉")){
        result.style.color = "red";
     }else{
-        result.style.color = "black";
+        if(resultText.includes("中吉")){
+            result.style.color = "blue";
+        }else{
+            if (resultText.includes("小吉")) {
+                result.style.color = "green";
+            } else {
+                if (resultText.includes("大凶")) {
+                    result.style.color = "black";
+                } else {
+                    result.style.color = "purple";
+                }
+            }
+        }
+        
     }
     
     });
