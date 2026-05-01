@@ -2,7 +2,8 @@ const fortunes =[
     "大吉💖素敵な出会いがあるかも！",
     "中吉　少し勇気を出すといいことが起きる",
     "小吉　今日はゆっくり過ごそう",
-    "凶　無理せず慎重に行動しよう"
+    "凶　無理せず慎重に行動しよう",
+    "大凶　今日はとことんついてない"
 ];
 
 //ボタンと表示エリアを取得
@@ -16,4 +17,4 @@ button.addEventListener("click", function () {
 
     //結果を表示
     result.textContent = fortunes[(randomNumber)];
-});
+    });
