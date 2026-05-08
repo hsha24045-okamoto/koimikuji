@@ -8,8 +8,11 @@ const fortunes =[
 
 //ボタンと表示エリアを取得
 const button = document.getElementById("omikuji-bt");
+const omikujiImg = document.getElementById("omikuji-img")
 const result = document.getElementById("result");
+const advice = document.getElementById("advice");
 
+omikujiImg.innerHTML ="<img src='happy.png'>";
 //ボタンがクリックされた時の処理
 button.addEventListener("click", function () {
     //ランダムな数字を作る
@@ -21,17 +24,27 @@ button.addEventListener("click", function () {
 
     if(resultText.includes("大吉")){
        result.style.color = "red";
+       advice.textContent ="今日の主人公は君だ！今日は積極的に行動しよう";
+       omikujiImg.innerHTML ="<img src='happy1.png'>";
     }else{
         if(resultText.includes("中吉")){
             result.style.color = "blue";
+            advice.textContent ="";
+            omikujiImg.innerHTML ="<img src='happy2.png'>";
         }else{
             if (resultText.includes("小吉")) {
                 result.style.color = "green";
+                advice.textContent ="";
+                omikujiImg.innerHTML ="<img src='happy3.png'>";
             } else {
                 if (resultText.includes("大凶")) {
-                    result.style.color = "black";
+                    result.style.color = "darkblue";
+                    advice.textContent ="今日はわき役に徹しよう。無理なことをしないのはもちろん自分から動くのは避けよう";
+                    omikujiImg.innerHTML ="<img src='happy5.png'>";
                 } else {
                     result.style.color = "purple";
+                    advice.textContent ="";
+                    omikujiImg.innerHTML ="<img src='happy4.png'>";
                 }
             }
         }

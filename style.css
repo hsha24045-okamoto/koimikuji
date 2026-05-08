@@ -1,17 +1,17 @@
 body {
     text-align: center;
-    background-color: rgba(17, 223, 223, 0.986);
+    background-color: #ffe6f0;
     font-family: "Arial", sans-serif;
 }
 
 h1{
-    color: rgba(44, 3, 139, 0.548);
+    color: #e91e63;
 }
 
 button{
     padding: 10px;
     font-size: 18px;
-    background-color: hsl(236, 71%, 33%);
+    background-color: #e91e63;
     color: #ffffff;
     border: none;
     border-radius: 5px;
@@ -19,7 +19,7 @@ button{
 }
 
 button:hover{
-    background-color: #200be6;
+    background-color: #2185b;
 }
 
 .result{
